@@ -1,5 +1,5 @@
 <script setup>
-import Team from './Team.vue'
+import Team from './TeamList.vue'
 import team1Img from '/img/team1.png'
 import team2Img from '/img/team2.png'
 import team3Img from '/img/team3.png'

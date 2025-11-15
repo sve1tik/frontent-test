@@ -1,5 +1,5 @@
 <script setup>
-import Services from './Services.vue'
+import Services from './ServicesList.vue'
 
 // Імпорт іконок і зображень
 import modeFanIcon from '/img/mode_fan.svg'

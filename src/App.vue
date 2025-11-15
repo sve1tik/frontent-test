@@ -2,21 +2,21 @@
 // Імпорт компонентів
 import Footer from './components/Footer.vue'
 import Header from './components/Header.vue'
-import ProfileHeader from './components/ProfileHeader.vue'
-import ProfileMain from './components/ProfileMain.vue'
-import ProfileTeam from './components/ProfileTeam.vue'
-import ProfileServices from './components/ProfileServices.vue'
-import ProfileReviews from './components/ProfileReviews.vue'
+import Hero from './components/Hero.vue'
+import Description from './components/Description.vue'
+import Team from './components/Team/TeamSection.vue'
+import Services from './components/Services/ServicesSection.vue'
+import Reviews from './components/Reviews.vue'
 </script>
 
 <template>
   <Header />
   <main>
-    <ProfileHeader />
-    <ProfileMain />
-    <ProfileTeam />
-    <ProfileServices />
-    <ProfileReviews />
+    <Hero />
+    <Description />
+    <Team />
+    <Services />
+    <Reviews />
   </main>
   <Footer />
 </template>
