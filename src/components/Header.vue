@@ -126,7 +126,6 @@ hr {
 
 .nav__link:hover {
   color: #4640de;
-  padding-bottom: 26px;
 }
 /* Гамбургер-меню */
 .nav__burger {
