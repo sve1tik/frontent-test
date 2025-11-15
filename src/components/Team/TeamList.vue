@@ -30,8 +30,7 @@ const props = defineProps({
   border: 1px solid #d6ddeb;
   padding: 24px;
   align-items: center;
-  width: fit-content;
-  margin-inline: auto;
+  width: 203px;
 }
 .team__img {
   margin: 0 auto;
@@ -57,6 +56,8 @@ const props = defineProps({
   gap: 20px;
   padding-bottom: 75px;
   border-bottom: 1px solid #d6ddeb;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .team__social {
   display: flex;
@@ -65,7 +66,6 @@ const props = defineProps({
 }
 @media (max-width: 992px) {
   .team__wrapp {
-    flex-direction: column;
     gap: 20px;
   }
 }

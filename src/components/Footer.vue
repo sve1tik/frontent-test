@@ -72,26 +72,25 @@ const handleSubmit = () => {
         <span class="copyright">2024 @ Sprinters. All rights reserved.</span>
 
         <div class="social-icons">
-          <a href="#" aria-label="Facebook"
+          <a href="#" target="#"
             ><img src="/img/facebook2.svg" alt="Facebook2"
           /></a>
-          <a href="#" aria-label="Instagram"
+          <a href="#" target="#"
             ><img src="/img/instagram2.svg" alt="Instagram2"
           /></a>
-          <a href="#" aria-label="Dribbble"
+          <a href="#" target="#"
             ><img src="/img/dribbble.svg" alt="Dribbble"
           /></a>
-          <a href="#" aria-label="LinkedIn"
+          <a href="#" target="#"
             ><img src="/img/linkedin2.svg" alt="LinkedIn"
           /></a>
-          <a href="#" aria-label="Twitter"><img src="/img/twitter.svg" alt="Twitter" /></a>
+          <a href="#" target="#"><img src="/img/twitter.svg" alt="Twitter" /></a>
         </div>
       </div>
     </div>
   </footer>
 </template>
 <style scoped>
-
 footer {
   background-color: #202430;
   color: #d6ddeb;

@@ -65,8 +65,8 @@ const attributes = [
             <section class="profile__social">
               <h3>Ми у соц. мережах</h3>
               <span>
-                <a href="twitter.com/stripe" target="_blank"><img :src="bird" alt="bird">twitter.com/stripe</a>
-                <a href="facebook.com/StripeHQ" target="_blank"><img :src="facebook" alt="bird">facebook.com/StripeHQ</a>
+                <a href="https://twitter.com/stripe" target="_blank"><img :src="bird" alt="bird">twitter.com/stripe</a>
+                <a href="https://facebook.com/StripeHQ" target="_blank"><img :src="facebook" alt="bird">facebook.com/StripeHQ</a>
               </span>
             </section>
 
@@ -242,6 +242,10 @@ const attributes = [
   .profile__gallery div {
     gap: 15px;
   }
+  .profile__calendar-wrapp{
+    width: fit-content;
+    margin-inline: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -301,7 +305,7 @@ const attributes = [
   .container {
     padding: 0 10px;
   }
-    .profile__description h3,
+  .profile__description h3,
   .profile__social h3,
   .profile__calendar h3,
   .drivers__title h3,
