@@ -795,7 +795,10 @@ hr {
   .bus-info {
     gap: 20px;
   }
-
+.profile__calendar-wrapp{
+  width: fit-content;
+  margin-inline: auto;
+}
   .profile__main {
     padding-top: 100px;
     padding-bottom: 80px;
