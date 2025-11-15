@@ -2,7 +2,8 @@
 import car1Img from '/img/car1.png'
 import car2Img from '/img/car2.png'
 import car3Img from '/img/car3.png'
-
+import bird from '/img/bird.svg'
+import facebook from '/img/facebook.svg'
 import franceSvg from '/img/France.svg'
 import italySvg from '/img/Italy.svg'
 import germanySvg from '/img/Germany.svg'
@@ -64,8 +65,8 @@ const attributes = [
             <section class="profile__social">
               <h3>Ми у соц. мережах</h3>
               <span>
-                <a href="twitter.com/stripe" target="_blank">twitter.com/stripe</a>
-                <a href="facebook.com/StripeHQ" target="_blank">facebook.com/StripeHQ</a>
+                <a href="twitter.com/stripe" target="_blank"><img :src="bird" alt="bird">twitter.com/stripe</a>
+                <a href="facebook.com/StripeHQ" target="_blank"><img :src="facebook" alt="bird">facebook.com/StripeHQ</a>
               </span>
             </section>
 

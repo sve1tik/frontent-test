@@ -1,5 +1,5 @@
 <script setup>
-import TestimonialSlider from '/TestimonialSlider.vue'
+import TestimonialSlider from './TestimonialSlider.vue'
 
 // Дані відгуків
 const testimonials = [

@@ -311,6 +311,8 @@ hr {
   padding: 8px 10px;
   border-radius: 50%;
   background: white;
+  display: flex;
+  align-items: center;
 }
 .bus-info__icon img {
   width: 24px;
@@ -337,7 +339,7 @@ hr {
   display: flex;
   gap: 30px;
   align-items: center;
-  padding-bottom: 12px;
+  margin-bottom: 12px;
 }
 .content__title h2 {
   font-size: 48px;
@@ -425,26 +427,9 @@ hr {
   position: relative;
   padding: 15px 30px;
   color: #4640de;
-}
-.profile__social > span > a:first-child::before {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 2px;
-  width: 20px;
-  height: 20px;
-  background-image: url('/img/bird.svg');
-  background-repeat: no-repeat;
-}
-.profile__social > span > a:last-child::before {
-  content: '';
-  position: absolute;
-  top: 13px;
-  left: 10px;
-  width: 20px;
-  height: 20px;
-  background-image: url('/img/facebook.svg');
-  background-repeat: no-repeat;
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
 }
 .profile__gallery {
   padding-top: 40px;
@@ -522,6 +507,7 @@ hr {
   display: grid;
   gap: 20px;
   justify-content: center;
+
 }
 .vc-bordered {
   border: none;
@@ -547,6 +533,8 @@ hr {
   border: 1px solid #d6ddeb;
   padding: 24px;
   align-items: center;
+  width: fit-content;
+  margin-inline: auto;
 }
 .team__img {
   margin: 0 auto;
@@ -569,7 +557,7 @@ hr {
 }
 .team__wrapp {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   padding-bottom: 75px;
   border-bottom: 1px solid #d6ddeb;
 }
@@ -766,6 +754,7 @@ hr {
   background-color: #5a3eaa;
 }
 
+
 /* Адаптивность для мобильных устройств */
 @media (max-width: 1200px) {
   .nav__logo {
@@ -935,7 +924,10 @@ hr {
   .profile__calendar h3 {
     font-size: 24px;
   }
-
+.profile__calendar_wrapp{
+    width: fit-content;
+  margin-inline: auto;
+}
   .profile__description p {
     font-size: 14px;
   }
@@ -1086,11 +1078,11 @@ hr {
   }
 
   .bus-info__content h3 {
-    font-size: 14px;
+    font-size: 18px;
   }
 
   .bus-info__content p {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .profile__description h3,
