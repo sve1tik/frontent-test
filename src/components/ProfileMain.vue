@@ -98,3 +98,219 @@ const attributes = [
       </div>
     </section>
 </template>
+
+<style scoped>
+
+.profile__main {
+  padding-top: 178px;
+  padding-bottom: 144px;
+}
+.profile__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.profile__article {
+  max-width: 752px;
+}
+.profile__description {
+  display: grid;
+  gap: 16px;
+}
+.profile__description h3,
+.profile__social h3,
+.profile__calendar h3 {
+  color: #25324b;
+  font-size: 32px;
+  font-weight: 800px;
+}
+.profile__description p {
+  color: #515b6f;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+.profile__social > span {
+  display: flex;
+  gap: 30px;
+  padding-top: 16px;
+}
+.profile__social > span > a {
+  border: 1px solid #4640de;
+  position: relative;
+  padding: 15px 30px;
+  color: #4640de;
+  align-items: center;
+  display: inline-flex;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+.profile__social > span > a:hover{
+  opacity: 0.8;
+}
+.profile__gallery {
+  padding-top: 40px;
+}
+
+.profile__gallery div {
+  display: grid;
+  gap: 20px;
+}
+
+.profile__gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.profile__countries {
+  border-bottom: 1px solid #d6ddeb;
+  padding-bottom: 24px;
+}
+.profile__countries a {
+  color: #4640de;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  padding-right: 16px;
+  transition: all 0.2s ease;
+}
+.profile__countries a:hover {
+  opacity: 0.8;
+}
+.profile__countries a::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -16px;
+  width: 24px;
+  height: 24px;
+  background-image: url('/img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: 14px;
+}
+.profile__calendar {
+  padding-top: 64px;
+}
+.profile__calendar h3 {
+  margin-bottom: 24px;
+}
+.profile__calendar a {
+  padding: 12px 16px;
+  border: 1px solid #ccccf5;
+  color: #4640de;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.profile__calendar a:hover {
+  color: #ccccf5;
+  border: 1px solid #4640de;
+  background: #4640de;
+}
+.profile__calendar a::after {
+  content: '+';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 30px;
+  font-size: 20px;
+}
+.profile__calendar-wrapp {
+  padding: 24px 24px 24px 32px;
+  border: 1px solid #d6ddeb;
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+
+}
+.vc-bordered {
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .profile__main {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  .profile__wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .profile__gallery div {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile__main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .profile__gallery div {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .profile__gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .profile__description h3,
+  .profile__social h3,
+  .profile__calendar h3 {
+    font-size: 24px;
+  }
+  .profile__description p {
+    font-size: 14px;
+  }
+  .profile__social > span {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .profile__social > span > a {
+    width: 100%;
+    text-align: center;
+  }
+  .profile__gallery {
+    padding-top: 30px;
+  }
+  .profile__gallery div {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .profile__gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+  }
+  .profile__countries {
+    padding-bottom: 20px;
+  }
+  .profile__calendar {
+    padding-top: 40px;
+  }
+  .profile__calendar-wrapp {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+    .profile__description h3,
+  .profile__social h3,
+  .profile__calendar h3,
+  .drivers__title h3,
+  .profile__services h3 {
+    font-size: 20px;
+  }
+  .profile__description p {
+    font-size: 13px;
+  }
+}
+
+</style>

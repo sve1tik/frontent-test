@@ -41,3 +41,34 @@ const props = defineProps({
   },
 })
 </script>
+
+<style scoped>
+.slider-container {
+  width: 600px;
+  max-width: 100%;
+}
+.my-testimonial-swiper {
+  padding-bottom: 50px !important;
+}
+
+.my-testimonial-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #d6d6d6;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.my-testimonial-swiper .swiper-pagination-bullet-active {
+  background-color: #5a3eaa;
+  width: 25px;
+  border-radius: 5px;
+}
+
+@media (max-width: 992px) {
+  .slider-container {
+    width: 100%;
+  }
+}
+
+</style>

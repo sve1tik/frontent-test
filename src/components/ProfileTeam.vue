@@ -17,7 +17,7 @@ const teamInfo = [
 
 </script>
 <template>
-        <section class="profile__team">
+    <section class="profile__team">
       <div class="container">
         <div class="drivers__title">
           <h3>Наші водії</h3>
@@ -27,3 +27,40 @@ const teamInfo = [
       </div>
     </section>
 </template>
+
+<style scoped>
+.drivers__title {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 11px;
+}
+.drivers__title a {
+  color: #4640de;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+.drivers__title a :hover {
+  opacity: 0.8; 
+}
+.drivers__title h3 {
+  color: #25324b;
+  font-weight: 800;
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  .drivers__title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .drivers__title h3 {
+    font-size: 24px;
+  }
+  .team__wrapp {
+    padding-bottom: 50px;
+  }
+}
+
+
+</style>

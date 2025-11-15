@@ -29,3 +29,51 @@ const servicesInfo = [
       </div>
     </section>
 </template>
+
+<style scoped>
+
+.profile__services {
+  padding-top: 72px;
+  padding-bottom: 100px;
+}
+.profile__services h3 {
+  color: #25324b;
+  font-weight: 800;
+  font-size: 32px;
+}
+.profile__services p {
+  color: #515b6f;
+  font-weight: 400;
+  font-size: 16px;
+  padding-bottom: 24px;
+  padding-top: 8px;
+}
+@media (max-width: 768px) {
+  .profile__services {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+  .profile__services h3 {
+    font-size: 24px;
+  }
+  .profile__services p {
+    font-size: 14px;
+  }
+  .services__wrapp {
+    gap: 20px;
+  }
+  .services__body {
+    gap: 10px;
+  }
+  .services__body h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile__services h3,
+  .profile__services p {
+    font-size: 20px;
+  }
+}
+</style>
